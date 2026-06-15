@@ -1,0 +1,20 @@
+# API & Agent Framework
+fastapi
+uvicorn[standard]
+langchain
+langchain-groq
+langgraph
+
+# RAG
+chromadb
+langchain-community
+
+# Tools
+pygithub
+jira
+
+# Utilities
+python-dotenv
+pydantic
+httpx
+python-multipart

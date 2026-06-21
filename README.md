@@ -1,12 +1,12 @@
 # AI Developer Assistant Agent
 
-An AI-powered developer assistant built with LangGraph + Groq that helps with:
+An AI-powered developer assistant built with LangGraph + Gemini that helps with:
 - **Code Analysis & Bug Detection** — Paste code, get instant analysis and fix suggestions
 - **RAG-based Docs Q&A** — Ask questions against your uploaded documentation
 - **JIRA / GitHub Integration** — Fetch issues, PRs, and defects directly from your tools
 
 ## Stack
-- **Backend:** Python, FastAPI, LangChain, LangGraph, Groq (LLaMA)
+- **Backend:** Python, FastAPI, LangChain, LangGraph, Gemini 2.5 Flash
 - **Frontend:** React, TypeScript, Vite, Tailwind CSS
 - **RAG:** ChromaDB
 - **Integrations:** GitHub API, JIRA API

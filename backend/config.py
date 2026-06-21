@@ -5,8 +5,12 @@ load_dotenv()
 
 class Config:
     # Groq
-    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
-    GROQ_MODEL: str = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+    # GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
+    # GROQ_MODEL: str = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+
+    # Gemini
+    GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
     # GitHub
     GITHUB_TOKEN: str = os.getenv("GITHUB_TOKEN", "")

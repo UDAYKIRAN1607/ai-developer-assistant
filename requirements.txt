@@ -2,15 +2,19 @@
 fastapi
 uvicorn[standard]
 langchain
-langchain-groq
+langchain-core
 langgraph
+
+# LLM - Gemini
+langchain-google-genai
+google-generativeai
 
 # RAG
 chromadb
 langchain-community
 
 # Tools
-pygithub
+PyGithub
 jira
 
 # Utilities

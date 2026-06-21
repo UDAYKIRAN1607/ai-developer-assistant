@@ -1,5 +1,5 @@
 from typing import TypedDict
-from langchain_groq import ChatGroq
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from backend.config import config
 
@@ -16,10 +16,11 @@ class CodeAnalysisState(TypedDict):
 # ── LLM ─────────────────────────────────────────────────────────
 
 def get_llm():
-    return ChatGroq(
-        api_key=config.GROQ_API_KEY,
-        model=config.GROQ_MODEL,
-        temperature=0.1
+    return ChatGoogleGenerativeAI(
+        model=config.GEMINI_MODEL,
+        google_api_key=config.GEMINI_API_KEY,
+        temperature=0.2,
+        max_output_tokens=2048
     )
 
 # ── Prompts ──────────────────────────────────────────────────────
